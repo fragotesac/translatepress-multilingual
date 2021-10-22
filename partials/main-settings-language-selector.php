@@ -97,13 +97,13 @@
                     // Translators: %1$s is the URL to the add-ons. %2$2 is for the TranslatePress add-on verbiage.
                     __( 'To add <strong>more than two languages</strong> and support for SEO Title, Description, Slug and more check out <a href="%1$s" target="_blank" title="%2$s">%2$s</a>.', 'translatepress-multilingual' ),
                     esc_url( $url ),
-                    _x( 'TranslatePress Advanced Add-ons', 'Verbiage for the TranslatePress Advanced add-ons', 'translatepress-multilingual' )
+                    _x( 'E-sky Translations Advanced Add-ons', 'Verbiage for the TranslatePress Advanced add-ons', 'translatepress-multilingual' )
                 );
                 $lnk .= '<br/><br />' . __('Not only are you getting extra features and premium support, but you also help fund the future development of TranslatePress.', 'translatepress-multilingual');
                 $lnk .= sprintf(
                     '<br /><br />' . '<a href="%1$s" class="button button-primary" target="_blank" title="%2$s">%2$s</a>',
                     esc_url( $url ),
-                    _x( 'TranslatePress Advanced Add-ons', 'Link to the TranslatePress add-ons', 'translatepress-multilingual' )
+                    _x( 'E-sky Translations Advanced Add-ons', 'Link to the TranslatePress add-ons', 'translatepress-multilingual' )
                 );
             }
             echo wp_kses_post( $lnk ); // Post kses for more generalized output that is more forgiving and has late escaping.

@@ -133,9 +133,9 @@ class TRP_Settings{
      * Register Settings subpage for TranslatePress
      */
     public function register_menu_page(){
-        add_options_page( 'TranslatePress', 'TranslatePress', apply_filters( 'trp_settings_capability', 'manage_options' ), 'translate-press', array( $this, 'settings_page_content' ) );
+        add_options_page( 'E-Sky Translations', 'E-Sky Translations', apply_filters( 'trp_settings_capability', 'manage_options' ), 'e-sky-translations', array( $this, 'settings_page_content' ) );
 
-        add_submenu_page( 'TRPHidden', 'TranslatePress Addons', 'TRPHidden', 'manage_options', 'trp_addons_page', array($this, 'addons_page_content') );
+        add_submenu_page( 'E-SkyHidden', 'E-Sky Translations Addons', 'E-SkyHidden', 'manage_options', 'trp_addons_page', array($this, 'addons_page_content') );
     }
 
     /**
@@ -520,8 +520,8 @@ class TRP_Settings{
         $tabs = array(
             array(
                 'name'  => __( 'General', 'translatepress-multilingual' ),
-                'url'   => admin_url( 'options-general.php?page=translate-press' ),
-                'page'  => 'translate-press'
+                'url'   => admin_url( 'options-general.php?page=e-sky-translations' ),
+                'page'  => 'e-sky-translations'
             ),
             array(
                 'name'  => __( 'Translate Site', 'translatepress-multilingual' ),
@@ -581,7 +581,7 @@ class TRP_Settings{
      * @return array An array of plugin action links.
      */
     public function plugin_action_links( $links ) {
-        $settings_link = sprintf( '<a href="%1$s">%2$s</a>', admin_url( 'options-general.php?page=translate-press' ), __( 'Settings', 'translatepress-multilingual' ) );
+        $settings_link = sprintf( '<a href="%1$s">%2$s</a>', admin_url( 'options-general.php?page=e-sky-translations' ), __( 'Settings', 'translatepress-multilingual' ) );
 
         array_unshift( $links, $settings_link );
 
