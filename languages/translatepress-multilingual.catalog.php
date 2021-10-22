@@ -315,8 +315,8 @@
 <?php __("Learn more in our documentation.", "translatepress-multilingual"); ?>
 <?php __("Floating language selection", "translatepress-multilingual"); ?>
 <?php __("Add a floating dropdown that follows the user on every page.", "translatepress-multilingual"); ?>
-<?php __("Show \"Powered by TranslatePress\"", "translatepress-multilingual"); ?>
-<?php __("Show the small \"Powered by TranslatePress\" label in the floater language switcher.", "translatepress-multilingual"); ?>
+<?php __("Show \"Powered by E-Sky Translations\"", "translatepress-multilingual"); ?>
+<?php __("Show the small \"Powered by E-Sky Translations\" label in the floater language switcher.", "translatepress-multilingual"); ?>
 <?php __("API Key from settings page:", "translatepress-multilingual"); ?>
 <?php __("HTTP Referrer:", "translatepress-multilingual"); ?>
 <?php __("Use this HTTP Referrer if the API lets you restrict key usage from its Dashboard.", "translatepress-multilingual"); ?>
