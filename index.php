@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: TranslatePress - Multilingual
-Plugin URI: https://translatepress.com/
+Plugin Name: E-sky Translations - Multilingual
+Plugin URI: https://e-sky.ca/
 Description: Experience a better way of translating your WordPress site using a visual front-end translation editor, with full support for WooCommerce and site builders.
 Version: 2.1.3
-Author: Cozmoslabs, Razvan Mocanu, Madalin Ungureanu, Cristophor Hurduban
+Author: E-Sky
 Author URI: https://cozmoslabs.com/
 Text Domain: translatepress-multilingual
 Domain Path: /languages

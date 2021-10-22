@@ -47,7 +47,7 @@ class TRP_Error_Manager{
                 $trp = TRP_Translate_Press::get_trp_instance();
                 $this->trp_settings = $trp->get_component( 'settings' );
             }
-            $error_message = wp_kses( sprintf(  __('<strong>TranslatePress</strong> encountered SQL errors. <a href="%s" title="View TranslatePress SQL Errors">Check out the errors</a>.', 'translatepress-multilingual'), admin_url( 'admin.php?page=trp_error_manager' ) ), array('a' => array('href' => array(), 'title' => array()), 'strong' => array()));
+            $error_message = wp_kses( sprintf(  __('<strong>E-sky Translations</strong> encountered SQL errors. <a href="%s" title="View TranslatePress SQL Errors">Check out the errors</a>.', 'translatepress-multilingual'), admin_url( 'admin.php?page=trp_error_manager' ) ), array('a' => array('href' => array(), 'title' => array()), 'strong' => array()));
             $mt_settings_option = get_option('trp_machine_translation_settings', $this->trp_settings->get_default_trp_machine_translation_settings() );
             if ( $mt_settings_option['machine-translation'] != 'no' ) {
                 $mt_settings_option['machine-translation'] = 'no';

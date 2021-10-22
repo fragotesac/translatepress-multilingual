@@ -265,6 +265,8 @@ class TRP_Language_Switcher{
         }
 
         $current_language = array();
+
+        
         $other_languages = array();
 
         foreach( $published_languages as $code => $name ) {
@@ -304,7 +306,7 @@ class TRP_Language_Switcher{
 
                 <?php
                 if( $this->settings['trp-ls-show-poweredby'] == 'yes' ){
-	                $powered_by = '<div id="trp-floater-poweredby">Powered by TranslatePress <a href="https://translatepress.com/?utm_source=language_switcher&utm_medium=clientsite&utm_campaign=TPLS" rel="nofollow" target="_blank" title="WordPress Translation Plugin">&raquo;</a></div>';
+	                $powered_by = '<div id="trp-floater-poweredby">Powered by E-sky Translations <a href="https://translatepress.com/?utm_source=language_switcher&utm_medium=clientsite&utm_campaign=TPLS" rel="nofollow" target="_blank" title="WordPress Translation Plugin">&raquo;</a></div>';
                 } else {
 	                $powered_by = '';
                 }
@@ -312,7 +314,7 @@ class TRP_Language_Switcher{
                 if ( apply_filters('trp_ls_floater_show_disabled_language', true, $current_language, $this->settings ) ) {
                     $disabled_language = '<a href="#" class="trp-floater-ls-disabled-language trp-ls-disabled-language" onclick="event.preventDefault()">';
                     $disabled_language .= ( $floater_settings['flags'] ? $this->add_flag( $current_language['code'], $current_language['name'] ) : '' ); // WPCS: ok.
-                    $disabled_language .= esc_html( $current_language_label );
+                    $disabled_language .= esc_html( $current_language_label . "sdasdasdasd" );
                     $disabled_language .= '</a>';
                 }
                 $floater_position = 'bottom';
@@ -325,8 +327,13 @@ class TRP_Language_Switcher{
 
                 if ( $floater_position == 'bottom' ){
                     echo '<div class="trp-language-wrap">';
-	              }
-
+	            }
+                ?>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                <?php
                 foreach( $other_languages as $code => $name ) {
                     $language_label = '';
 
@@ -348,7 +355,11 @@ class TRP_Language_Switcher{
 					          </a>
                 <?php
                 }
+                ?>
 
+                    </div>
+                </div>
+                <?php
                 if ( $floater_position == 'top' ){
 	                echo '</div>';
                 }
@@ -544,6 +555,7 @@ class TRP_Language_Switcher{
 
 
                 $items[$key]->title = apply_filters( 'trp_menu_language_switcher', $items[$key]->title, $language_name, $language_code, $menu_settings );
+                
             }
         }
 

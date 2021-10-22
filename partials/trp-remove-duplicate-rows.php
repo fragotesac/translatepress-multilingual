@@ -1,13 +1,13 @@
 <div id="trp-addons-page" class="wrap">
 
-    <h1> <?php esc_html_e( 'TranslatePress Settings', 'translatepress-multilingual' );?></h1>
+    <h1> <?php esc_html_e( 'E-Sky Translations Settings', 'translatepress-multilingual' );?></h1>
 
     <div class="grid feat-header">
         <div class="grid-cell">
-            <h2><?php esc_html_e('Remove duplicate rows from TranslatePress tables', 'translatepress-multilingual' );?> </h2>
+            <h2><?php esc_html_e('Remove duplicate rows from E-sky translate tables', 'translatepress-multilingual' );?> </h2>
 	        <?php if ( empty( $_GET['trp_rm_duplicates'] ) ){ ?>
                 <div>
-			        <?php echo wp_kses_post( __( '<strong>IMPORTANT NOTE: Before performing this action it is strongly recommended to first backup the database.</strong><br><br>This feature can be used to cleanup duplicate entries in TranslatePress trp_dictionary or trp_gettext tables. Such duplicates can appear in exceptional situations of unexpected behavior.', 'translatepress-multilingual' ) )?>
+			        <?php echo wp_kses_post( __( '<strong>IMPORTANT NOTE: Before performing this action it is strongly recommended to first backup the database.</strong><br><br>This feature can be used to cleanup duplicate entries in E-sky Translations trp_dictionary or trp_gettext tables. Such duplicates can appear in exceptional situations of unexpected behavior.', 'translatepress-multilingual' ) )?>
                 </div>
                 <form onsubmit="return confirm('<?php echo esc_js( __( 'IMPORTANT: It is strongly recommended to first backup the database!! Are you sure you want to continue?', 'translatepress-multilingual' ) ); ?>');">
                     <table class="form-table">

@@ -2,7 +2,7 @@
 <div id="trp-main-settings" class="wrap">
     <form method="post" action="options.php">
         <?php settings_fields( 'trp_settings' ); ?>
-        <h1> <?php esc_html_e( 'TranslatePress Settings', 'translatepress-multilingual' );?></h1>
+        <h1> <?php esc_html_e( 'E-sky Translations Settings', 'translatepress-multilingual' );?></h1>
         <?php do_action ( 'trp_settings_navigation_tabs' ); ?>
 
         <table id="trp-options" class="form-table">
@@ -111,7 +111,7 @@
                     <div class="trp-ls-type">
                       <label><input type="checkbox" id="trp-ls-show-poweredby" name="trp_settings[trp-ls-show-poweredby]"  value="yes"  <?php if ( isset($this->settings['trp-ls-show-poweredby']) && ( $this->settings['trp-ls-show-poweredby'] == 'yes' ) ){ echo 'checked'; }  ?>><b><?php esc_html_e( 'Show "Powered by TranslatePress"', 'translatepress-multilingual' ); ?></b></label>
                       <p class="description">
-                      <?php esc_html_e( 'Show the small "Powered by TranslatePress" label in the floater language switcher.', 'translatepress-multilingual' ); ?>
+                      <?php esc_html_e( 'Show the small "Powered by E-Sky translations" label in the floater language switcher.', 'translatepress-multilingual' ); ?>
                       </p>
                     </div>
                 </td>
