@@ -109,7 +109,7 @@
                         </p>
                     </div>
                     <div class="trp-ls-type">
-                      <label><input type="checkbox" id="trp-ls-show-poweredby" name="trp_settings[trp-ls-show-poweredby]"  value="yes"  <?php if ( isset($this->settings['trp-ls-show-poweredby']) && ( $this->settings['trp-ls-show-poweredby'] == 'yes' ) ){ echo 'checked'; }  ?>><b><?php esc_html_e( 'Show "Powered by TranslatePress"', 'translatepress-multilingual' ); ?></b></label>
+                      <label><input type="checkbox" id="trp-ls-show-poweredby" name="trp_settings[trp-ls-show-poweredby]"  value="yes"  <?php if ( isset($this->settings['trp-ls-show-poweredby']) && ( $this->settings['trp-ls-show-poweredby'] == 'yes' ) ){ echo 'checked'; }  ?>><b><?php esc_html_e( 'Show "Powered by E-Sky Translations"', 'translatepress-multilingual' ); ?></b></label>
                       <p class="description">
                       <?php esc_html_e( 'Show the small "Powered by E-Sky translations" label in the floater language switcher.', 'translatepress-multilingual' ); ?>
                       </p>

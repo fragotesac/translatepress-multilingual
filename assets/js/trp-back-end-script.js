@@ -18,7 +18,7 @@ jQuery( function() {
         this.initialize_select2 = function () {
             jQuery('.trp-select2').each(function () {
                 var select_element = jQuery(this);
-                select_element.select2(/*arguments*/);
+                //select_element.select2(/*arguments*/);
             });
         };
 
@@ -39,10 +39,11 @@ jQuery( function() {
                 return;
             }
 
+            /* THIS CONDITIONAL LIMIT TO 2 THE LANGUAGES TO TRANSLATED
             if (jQuery( "#trp-languages-table .trp-language" ).length >= 2 ){
                 jQuery(".trp-upsell-multiple-languages").show('fast');
                 return;
-            }
+            }*/
 
             selected_language.val( '' ).trigger( 'change' );
 
@@ -58,14 +59,14 @@ jQuery( function() {
             })
 
             select.val( new_language );
-            select.select2();
+            //select.select2();
 
             var checkbox = new_option.find( 'input.trp-translation-published' );
             checkbox.removeAttr( 'disabled' );
             checkbox.val( new_language );
 
             var url_slug = new_option.find( 'input.trp-language-slug' );
-            url_slug.val( _this.get_default_url_slug( new_language ) );
+            url_slug.val( new_language  );
             url_slug.attr('name', 'trp_settings[url-slugs][' + new_language + ']' );
 
             var language_code = new_option.find( 'input.trp-language-code' );
@@ -135,11 +136,12 @@ jQuery( function() {
             if ( !jQuery( '.trp-language-selector-limited' ).length ){
                 return;
             }
+            trp_url_slugs_info=[];
 
             duplicate_url_error_message = trp_url_slugs_info['error_message_duplicate_slugs'];
             iso_codes = trp_url_slugs_info['iso_codes'];
 
-            jQuery( '#trp-sortable-languages' ).sortable({ handle: '.trp-sortable-handle' });
+            //jQuery( '#trp-sortable-languages' ).sortable({ handle: '.trp-sortable-handle' });
             jQuery( '#trp-add-language' ).click( _this.add_language );
             jQuery( '.trp-remove-language' ).click( _this.remove_language );
             jQuery( '#trp-default-language' ).on( 'change', _this.update_default_language );

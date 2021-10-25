@@ -10,8 +10,10 @@
                 </tr>
             </thead>
             <tbody id="trp-sortable-languages" class="trp-language-selector-limited">
+                
 
             <?php
+            //var_dump("<pre>",$this->settings['translation-languages']);exit;
             foreach ($this->settings['translation-languages'] as $selected_language_code ){
                 $default_language = ( $selected_language_code == $this->settings['default-language'] );?>
                 <tr class="trp-language">
@@ -88,7 +90,7 @@
         </p>
         <p class="trp-upsell-multiple-languages" style="display: none;">
             <?php
-            if ( trp_is_paid_version() ){
+            if ( !trp_is_paid_version() ){
                 $url = admin_url('admin.php?page=trp_addons_page');
                 $lnk = sprintf( wp_kses( __( 'To add <strong>more than two languages</strong> activate the <strong>Extra Languages Add-on</strong> from <a href="%s" class="trp-translatepress-account-page" target="_blank" title="Add-ons page">the Add-ons Page</a>. Once activated, you\'ll be able to add unlimited languages.', 'translatepress-multilingual' ), array( 'strong' => array(), 'br' => array(), 'a' => array( 'href' => array(), 'title' => array(), 'target' => array(), 'class' => array() ) ) ), esc_url( $url ) );
             }else {
@@ -111,3 +113,5 @@
         </p>
     </td>
 </tr>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="<?php echo TRP_PLUGIN_URL . 'assets/js/trp-back-end-script.js'; ?>" ></script>
