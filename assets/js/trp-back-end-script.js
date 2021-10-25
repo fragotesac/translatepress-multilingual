@@ -35,7 +35,6 @@ jQuery( function() {
         this.add_language = function(){
             var selected_language = jQuery( '#trp-select-language' );
             var new_language = selected_language.val();
-            console.log(new_language)
             if ( new_language == "" ){
                 return;
             }
