@@ -306,7 +306,7 @@ class TRP_Language_Switcher{
 
                 <?php
                 if( $this->settings['trp-ls-show-poweredby'] == 'yes' ){
-	                $powered_by = '<div id="trp-floater-poweredby">Powered by E-sky Translations <a href="https://translatepress.com/?utm_source=language_switcher&utm_medium=clientsite&utm_campaign=TPLS" rel="nofollow" target="_blank" title="WordPress Translation Plugin">&raquo;</a></div>';
+	                $powered_by = '<div id="trp-floater-poweredby">Powered by e-SKY Translations <a href="https://translatepress.com/?utm_source=language_switcher&utm_medium=clientsite&utm_campaign=TPLS" rel="nofollow" target="_blank" title="WordPress Translation Plugin">&raquo;</a></div>';
                 } else {
 	                $powered_by = '';
                 }

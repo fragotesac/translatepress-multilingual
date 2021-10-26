@@ -1,7 +1,7 @@
 <div id="trp-main-settings" class="wrap">
     <form method="post" action="options.php">
         <?php settings_fields( 'trp_machine_translation_settings' ); ?>
-        <h1> <?php esc_html_e( 'E-sky Translations Automatic Translation', 'translatepress-multilingual' );?></h1>
+        <h1> <?php esc_html_e( 'e-SKY Translations Automatic Translation', 'translatepress-multilingual' );?></h1>
         <?php do_action ( 'trp_settings_navigation_tabs' ); ?>
 
         <table id="trp-options" class="form-table trp-machine-translation-options">
@@ -70,7 +70,7 @@
                                 $lnk = sprintf(
                                 // Translators: %1$s is the URL to the DeepL add-on. %2$s is the name of the Pro offerings.
                                     $message, esc_url( $url ),
-                                    _x( 'E-sky Translations Pro Add-on', 'Verbiage for the DeepL Pro Add-on', 'translatepress-multilingual' )
+                                    _x( 'e-SKY Translations Pro Add-on', 'Verbiage for the DeepL Pro Add-on', 'translatepress-multilingual' )
                                 );
                             }
 
@@ -82,7 +82,7 @@
                                     $lnk .= sprintf(
                                         '<br /><br />' . '<a href="%1$s" class="button button-primary" target="_blank" title="%2$s">%2$s</a>',
                                         esc_url( $url ),
-                                        __( 'E-sky Translations Pro Add-ons', 'translatepress-multilingual' )
+                                        __( 'e-SKY Translations Pro Add-ons', 'translatepress-multilingual' )
                                     );
                                 }
                                 echo wp_kses_post( $lnk ); // Post kses for more generalized output that is more forgiving and has late escaping.

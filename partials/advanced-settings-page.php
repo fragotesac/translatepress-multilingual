@@ -2,7 +2,7 @@
 <div id="trp-advanced-settings" class="wrap">
     <form method="post" action="options.php">
         <?php settings_fields( 'trp_advanced_settings' ); ?>
-        <h1> <?php esc_html_e( 'E-sky Translations Advanced Settings', 'translatepress-multilingual' );?></h1>
+        <h1> <?php esc_html_e( 'e-SKY Translations Advanced Settings', 'translatepress-multilingual' );?></h1>
         <?php do_action ( 'trp_settings_navigation_tabs' ); ?>
 
         <?php do_action('trp_before_output_advanced_settings_options' ); ?>

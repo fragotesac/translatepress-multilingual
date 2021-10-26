@@ -102,7 +102,7 @@ class TRP_Reviews{
         $url = 'https://wordpress.org/support/plugin/translatepress-multilingual/reviews/?filter=5#new-post';
 
         $message = '<p style="margin-top: 16px;font-size: 14px;padding-right:20px">';
-        $message .= wp_kses( __( "Hello! Seems like you've been using <strong>E-sky Translations</strong> for a while now to translate your website. That's awesome! ", 'translatepress-multilingual' ), array('strong' => array() ) );
+        $message .= wp_kses( __( "Hello! Seems like you've been using <strong>e-SKY Translations</strong> for a while now to translate your website. That's awesome! ", 'translatepress-multilingual' ), array('strong' => array() ) );
         $message .= '</p>';
 
         $message .= '<p style="font-size: 14px">';
@@ -110,7 +110,7 @@ class TRP_Reviews{
         $message .= '</p>';
 
         $message .= '<p>';
-        $message .= esc_html__( "~ Razvan, developer of E-sky Translations", 'translatepress-multilingual' ) ;
+        $message .= esc_html__( "~ Razvan, developer of e-SKY Translations", 'translatepress-multilingual' ) ;
         $message .= '</p>';
 
         // buttons for OK / No, thanks

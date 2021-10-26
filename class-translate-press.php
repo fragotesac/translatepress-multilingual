@@ -57,7 +57,7 @@ class TRP_Translate_Press{
         define( 'TRP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
         define( 'TRP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
         define( 'TRP_PLUGIN_BASE', plugin_basename( __DIR__ . '/index.php' ) );
-        define( 'TRP_PLUGIN_SLUG', 'e-sky-translations-multilingual' );
+        define( 'TRP_PLUGIN_SLUG', 'e-SKY-translations-multilingual' );
         define( 'TRP_PLUGIN_VERSION', '2.1.3' );
 
 	    wp_cache_add_non_persistent_groups(array('trp'));

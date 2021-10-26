@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: E-sky Translations - Multilingual
+Plugin Name: e-SKY Translations - Multilingual
 Plugin URI: https://e-sky.ca/
 Description: Experience a better way of translating your WordPress site using a visual front-end translation editor, with full support for WooCommerce and site builders.
 Version: 2.1.3
-Author: E-Sky
+Author: e-SKY
 Author URI: https://cozmoslabs.com/
 Text Domain: translatepress-multilingual
 Domain Path: /languages

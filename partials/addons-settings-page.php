@@ -1,6 +1,6 @@
 <div id="trp-addons-page" class="wrap">
 
-    <h1> <?php esc_html_e( 'E-sky Translations Settings', 'translatepress-multilingual' );?></h1>
+    <h1> <?php esc_html_e( 'e-SKY Translations Settings', 'translatepress-multilingual' );?></h1>
     <?php do_action ( 'trp_settings_navigation_tabs' ); ?>
 
     <?php
@@ -8,12 +8,12 @@
     $trp_addons_listing = new TRP_Addons_List_Table();
     $trp_addons_listing->images_folder = TRP_PLUGIN_URL.'assets/images/';
     $trp_addons_listing->text_domain = 'translatepress-multilingual';
-    $trp_addons_listing->header = array( 'title' => __('E-sky Translations Add-ons', 'translatepress-multilingual' ) );
+    $trp_addons_listing->header = array( 'title' => __('e-SKY Translations Add-ons', 'translatepress-multilingual' ) );
     if( defined( 'TRANSLATE_PRESS' ) )
         $trp_addons_listing->current_version = TRANSLATE_PRESS;
     else
-        $trp_addons_listing->current_version = 'E-Sky Translations';//in free version we do not define the constant as free version needs to be active always
-    $trp_addons_listing->tooltip_header = __( 'E-sky Translations Add-ons', 'translatepress-multilingual' );
+        $trp_addons_listing->current_version = 'e-SKY Translations';//in free version we do not define the constant as free version needs to be active always
+    $trp_addons_listing->tooltip_header = __( 'e-SKY Translations Add-ons', 'translatepress-multilingual' );
     $trp_addons_listing->tooltip_content = sprintf( __( 'You must first purchase this version to have access to the addon %1$shere%2$s', 'translatepress-multilingual' ), '<a target="_blank" href="'. trp_add_affiliate_id_to_link('https://translatepress.com/pricing/?utm_source=wpbackend&utm_medium=clientsite&utm_content=add-on-page&utm_campaign=TRP').'">', '</a>' );
 
 
