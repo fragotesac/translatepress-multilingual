@@ -176,7 +176,7 @@ class TRP_WPBakery {
     }
 
     private function get_group() {
-        return __('E-sky Translations', 'translatepress-multilingual');
+        return __('e-SKY Translations', 'translatepress-multilingual');
     }
 
     private function get_published_languages($placeholder = false) {

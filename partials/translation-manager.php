@@ -5,7 +5,7 @@
         do_action( 'trp_head' );
     ?>
 
-    <title>E-sky Translations</title>
+    <title>e-SKY Translations</title>
 </head>
 <body class="trp-editor-body">
 

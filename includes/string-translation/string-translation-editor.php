@@ -4,7 +4,7 @@
     <?php
     do_action( 'trp_string_translation_editor_head' );
     ?>
-    <title>E-sky Translations - <?php esc_html_e('String Translation Editor', 'translatepress-multilingual'); ?> </title>
+    <title>e-SKY Translations - <?php esc_html_e('String Translation Editor', 'translatepress-multilingual'); ?> </title>
 </head>
 <body class="trp-editor-body">
 
